@@ -10,14 +10,18 @@
       
 
 .banner{
-    background-image: url(../image/WhatsApp\ Image\ 2025-04-13\ at\ 19.35.09_8c863c00.JPG);
-    padding: 200px;
-    background-size: cover;
+    background-image: url(/website/image/WhatsApp\ Image\ 2025-04-13\ at\ 19.35.09_8c863c07.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
-    max-width: 100%;
-    height: auto;
+    background-position: center;
+    
 
 }
+
+
+    
+
+    
 
 .abi{
     padding-top: 300px;
