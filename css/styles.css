@@ -25,4 +25,22 @@
 
 .abi{
     padding-top: 300px;
+    
+}
+
+
+@media (max-width: 600px) {
+    
+.abi {
+   padding: 0px;
+   font-size: 0%;
+   
+   
+    
+    
+    
+}
+
+
+    
 }
