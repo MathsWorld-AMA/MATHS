@@ -8,6 +8,21 @@
 }
 
 
+.title{
+  padding: 25px;
+  font-size: 60px;
+
+}
+  
+.grid{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 15px;
+    max-width: 1300px;
+    margin: auto;
+}
+
 
 
 
