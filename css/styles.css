@@ -5,42 +5,15 @@
         font-weight: 400;
         font-style: normal;
       }
-      
-}
-      
-
-.banner{
-    background-image: url(../image/WhatsApp\ Image\ 2025-04-13\ at\ 19.35.09_8c863c07.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-
 }
 
 
-    
+
+
 
     
 
-.abi{
-    padding-top: 300px;
     
-}
 
 
-@media (max-width: 600px) {
-    
-.abi {
-   padding: 0px;
-   font-size: 0%;
-   
-   
-    
-    
-    
-}
 
-
-    
-}
