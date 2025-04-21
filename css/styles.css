@@ -6,22 +6,29 @@
         font-style: normal;
       }
 }
-
-
-.title{
-  padding: 25px;
+.container-fluid{
+  background-color: aqua;
+  padding: 10px 0px;
+  font-size: 20px;
+ 
+}
+.banner{
+  width: 100%;
+}
+.h4{
   font-size: 60px;
+}
+.subject{
+ 
+  width: 200px;
+  padding: 25px;
+}
+.footer{
+  background-color: black;
+}
 
-}
-  
-.grid{
-  display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-gap: 15px;
-    max-width: 1300px;
-    margin: auto;
-}
+
+
 
 
 
