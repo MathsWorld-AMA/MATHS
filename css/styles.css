@@ -171,6 +171,7 @@ section#hero{
 #hero h1 {
   padding-bottom: 15px;
 }
+
 button {
   font-size: 15px;
   padding: 30px 100px;
@@ -232,12 +233,12 @@ button:active {
 }
 #abi {
   padding: 150px;
-  background-image: url(/website//image/Late\ Night\ Study\ Wallpaper.webp);
+  background-image: url(../image/Late\ Night\ Study\ Wallpaper.webp);
 }
 #banner {
   width: 100%;
   padding: 300px;
-  background-image: url(/website/image/abi.JPG);
+  background-image: url(../image/abi.JPG);
   
 }
 #intro {
