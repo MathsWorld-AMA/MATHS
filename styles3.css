@@ -131,7 +131,7 @@ section#hero{
 
 #hero {
     
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
     
 
@@ -140,7 +140,7 @@ section#hero{
     padding-bottom: 15px;
 }
 button {
-    padding: 15px 35px;
+    padding: 15px 25px;
     border: none;
     outline: none;
     color: #fff;
@@ -217,4 +217,12 @@ button:active {
         left: 6rem;
         
     }
+    #hero h1 
+    {
+        font-size: 1.5rem;
+    }
+    button {
+        padding: 10px 15px;
+    }
+
 }
