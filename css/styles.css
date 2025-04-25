@@ -264,10 +264,6 @@ svg {
   .dropdown_menu {
       display: block;
   }
-  #banner
-  {
-    display: none;
-  }
   .h4 {
     font-size: 25px;
   }
@@ -288,10 +284,6 @@ svg {
   }
   button {
       padding: 10px 15px;
-  }
-  #banner
-  {
-    display: none;
   }
 
 }
