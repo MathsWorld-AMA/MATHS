@@ -251,6 +251,10 @@ button:active {
 svg {
   color: #002bff;
 }
+#buttons
+{
+  display: none;
+}
 
 /* BUTTON */
 /* RESPONSIVE DESIGN */
@@ -272,8 +276,26 @@ svg {
     padding: 15px 50px;
     align-items: center;
   }
+  #banner{
+    display: none;
+  }
+  #button
+  {
+    display: none;
+
+  }
+  #buttons
+  {
+    display: block;
+  }
 }  
 @media (max-width: 500px) {
+  .navbar .logo a {
+    font-size: 1rem;
+    font-weight: bold;
+  
+  
+  }
   .dropdown_menu {
       left: 6rem;
       
@@ -284,11 +306,44 @@ svg {
       font-size: 1.5rem;
   }
   button {
-      padding: 10px 15px;
+    margin: 5px;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  #banner{
+    display: none;
+  }
+  .h4 {
+    font-size: 16px;
   }
 
 }
+@media (max-width: 400px)
+{
+  button {
+    margin: 5px;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.h4 {
+  font-size: 15px;
+}
+#abi {
 
+  padding: 90px;
+}
+#button
+{
+  display: none;
+
+}
+#buttons
+{
+  display: block;
+}
+}
 
 
 
