@@ -335,14 +335,7 @@ svg {
   .h4 {
     font-size: 16px;
   }
-  #abi3
-  {
-    display: block;
-  }
-  #abi
-  {
-    display: none;
-  }
+
 
 }
 @media (max-width: 400px)
@@ -368,14 +361,6 @@ svg {
 #buttons
 {
   display: block;
-}
-#abi3
-{
-  display: block;
-}
-#abi
-{
-  display: none;
 }
 }
 
