@@ -27,8 +27,8 @@
 .grade6
 {
   padding: 10px;
-  font-size: 20px;
-  background-color: rgb(207, 246, 246);
+  font-size: 25px;
+  background-color: rgb(13, 100, 100);
 }
 *{
   margin: 0;
@@ -255,6 +255,16 @@ svg {
 {
   display: none;
 }
+#subject
+{
+  padding: 150px;
+  background-color: #000;
+  background-image: url(/website/image/Late\ Night\ Study\ Wallpaper.webp);
+}
+#abi3
+{
+  display: none;
+}
 
 /* BUTTON */
 /* RESPONSIVE DESIGN */
@@ -288,6 +298,14 @@ svg {
   {
     display: block;
   }
+  #abi3
+  {
+    display: block;
+  }
+  #abi
+  {
+    display: none;
+  }
 }  
 @media (max-width: 500px) {
   .navbar .logo a {
@@ -317,6 +335,14 @@ svg {
   .h4 {
     font-size: 16px;
   }
+  #abi3
+  {
+    display: block;
+  }
+  #abi
+  {
+    display: none;
+  }
 
 }
 @media (max-width: 400px)
@@ -342,6 +368,14 @@ svg {
 #buttons
 {
   display: block;
+}
+#abi3
+{
+  display: block;
+}
+#abi
+{
+  display: none;
 }
 }
 
