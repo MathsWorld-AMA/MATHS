@@ -15,66 +15,74 @@
     <link rel="stylesheet" href="./about.html">
     <link rel="stylesheet" href="./Contact.html">
     <link rel="stylesheet" href="./impact.html">
-    <link rel="stylesheet" href="./Sabout.html">
 </head>
 <body>
-  <div class="sticky-top ">
-    <nav class="web-header  navbar  navbar-expand-lg  ">
-      <div class=" container-fluid">
-       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./Sabout.html">අප ගැන</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Simpact.html"> අප ළඟා කරගත් දෑ</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ශ්‍රේණි 
-
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./g6.html">6 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="./g7.html">7 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="./g8.html">8 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="./g9.html">9 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="./g10.html">10 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="./g11.html">11 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="#">12 ශ්‍රේණිය</a></li>
-                <li><a class="dropdown-item" href="#">13 ශ්‍රේණිය</a></li>
-                
-                
-              </ul>
-
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Scontact.html"> සම්බන්ධ වන්න</a>
-            </li>
+  <nav>
+    <header>
+      <div class="navbar">
+          <div class="logo"><a href="#">MATHS WORLD</a></div>
+          <ul class="links">
+              <li><a href="./index.html">මුල් පිටුව</a></li>
+              <li><a href="./Sabout.html">අප ගැන</a></li>
+              <li><a href="./Simpact.html">අප ළඟා කරගත් දෑ</a></li>
+              <li><a href="./Scontact.html">සම්බන්ධ වන්න</a></li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search
-            </button>
-          </form>
-        </div>
+          
+          <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+  
+          </div>
       </div>
-    </nav>
-  </div>
+      <div class="dropdown_menu">
+        <li><a href="./index.html">මුල් පිටුව</a></li>
+        <li><a href="./Sabout.html">අප ගැන</a></li>
+        <li><a href="./Simpact.html">අප ළඟා කරගත් දෑ</a></li>
+        <li><a href="./Scontact.html">සම්බන්ධ වන්න</a></li>
+       
+      </div>
+  </header>
+
+  </nav>
   <div class="grade6">
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="grade6 breadcrumb">
           <li class="breadcrumb-item"><a href="./sinhala.html">මුල් පිටුව</a></li>
-          <li class="breadcrumb-item active" aria-current="page">7 ශ්‍රේණිය</li>
+          <li class="breadcrumb-item active text-white" aria-current="page">7 ශ්‍රේණිය</li>
         </ol>
       </nav> 
   </div>
-  <section id="Skills" class="bg-body-secondary">
+  <section id="subject">
+    <div class="">
+      
+      <div class="row">
+        <div class="text-center pb-5 ">
+          <h4 class="h4 text-white">විෂය තෝරන්න</h4>
+        </div>
+      </div>
+        <div  class="row">
+          <div class="col-md-4 text-center">
+            <a href="#"><button type="button" class=" btn-outline-primary"> ගණිතය </a>
+  
+            
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#"><button type="button" class=" btn-outline-primary"> විද්‍යාව </a>
+  
+            
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#"><button type="button" class=" btn-outline-primary"> සිංහල </a>
+  
+            
+          </div>
+        </div>
+
+  </section>
+  <section id="team">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="text-center pt-3 ">Our Team</h4>
+                <h4 class="text-center text-white pt-3 ">Our Team</h4>
             </div>
         </div>
         <div class="row p-3">
@@ -129,8 +137,8 @@
 
 
     </div>
-  </section> 
 
+  </section> 
   <section class="p-3 mb-2 footer text-white">
     <div class="container ">
       <div class="row">
@@ -214,6 +222,7 @@
       </div>
 
     </div>
+
   </section>
   <footer>
     <div class="container">
@@ -223,7 +232,22 @@
             </div>
         </div>
     </div>
-  </footer>    
+  </footer> 
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+  
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+  
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+  
+    }
+  </script>   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
