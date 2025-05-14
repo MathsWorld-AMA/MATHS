@@ -174,7 +174,7 @@ section#hero{
 
 button {
   font-size: 15px;
-  padding: 30px 100px;
+  padding: 30px 60px;
   border: none;
   outline: none;
   color: #fff;
@@ -233,12 +233,20 @@ button:active {
 }
 #abi {
   padding: 150px;
-  background-image: url(../image/Late\ Night\ Study\ Wallpaper.webp);
+  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  
 }
 #banner {
   width: 100%;
   padding: 300px;
-  background-image: url(../image/abi.JPG);
+  background-image: url(../image/bat.jpg);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
   
 }
 #intro {
@@ -259,13 +267,19 @@ svg {
 {
   padding: 150px;
   background-color: #000;
-  background-image: url(../image/Late\ Night\ Study\ Wallpaper.webp);
+  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #pdf
 {
   background-color: #000;
   padding: 20px 0px 50px 0px;
-  background-image: url(../image/Late\ Night\ Study\ Wallpaper.webp);
+  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #pdf a p{
   font-size: 15px;
