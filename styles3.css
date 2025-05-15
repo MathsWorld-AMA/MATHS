@@ -7,10 +7,9 @@
 body
 {
     height: 100vh;
-    background-color: black;
+    background-color: #000;
     background-image: url(../website/image/painting-mountain-lake-with-mountain-background.jpg);
     background-size: cover;
-    background-position: center;
 }
 li{
     
