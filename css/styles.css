@@ -9,7 +9,9 @@
 }
 
 .h4{
-  font-size: 60px;
+  color: #000;
+  font-size: 40px;
+  
 }
 .subject{
  
@@ -44,18 +46,18 @@ li{
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 1.5rex;
 
 }
 
 a:hover {
-  color: orange;
+  color: rgb(237, 161, 21);
 
 }
 /* HEADER*/
 header {
-  background-color: black;
+  background-color: #fff;
   position: relative;
   padding: 0 2rem;
 
@@ -83,8 +85,11 @@ header {
   gap: 2rem;
 
 }
+.navbar .links a{
+  font-size: 1.25rem;
+}
 .navbar .toggle_btn {
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -154,23 +159,21 @@ section#hero{
   color: #fff;
 
 }
+.intro{
+  margin: 50px;
+  background-image: url(../image/360_F_430029841_hCPkljypGWekhCBw6tv54t9U9Rl8eC9C.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-#hero {
-  
-  font-size: 2rem;
-  text-decoration: none;
-  
-
-}
-#hero h1 {
-  padding-bottom: 15px;
 }
 
 button {
-  font-size: 15px;
+  font-size: 20px;
+  margin: 5px 0px;
   padding: 30px 60px;
-  border: none;
-  outline: none;
+  outline: #000;
+  background-color: #021f88;
   color: #fff;
   cursor: pointer;
   transition: scale 0.2 ease;
@@ -180,54 +183,9 @@ button {
   border-radius: 12px;
   
 }
-button::after{
-  content: "";
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #333;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-button::before {
-  content: "";
-  background: linear-gradient(
-      45deg,
-      #ff0000, #ff7300, #fffb00, #48ff00,#00ffd5, #002bff, #ff00cb, #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 600%;
-  z-index: -1;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  filter: blur(8px);
-  animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-  opacity: 1;
-
-}
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
-}
-/* hover*/
-button:active:after{
-  background: transparent;
-
-}
-button:active {
-  color: #000;
-  font-weight: bold;
-}
 #abi {
-  padding: 150px;
-  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  margin: 50px;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,17 +193,112 @@ button:active {
   
 }
 #banner {
-  width: 100%;
-  padding: 300px;
+  margin: 10px 100px 10px 100px;
+  padding: 150px;
+  background-color: #fff;
   background-image: url(../image/bat.jpg);
+  align-items: center;
   background-size: cover;
-  
   background-repeat: no-repeat;
+  border-radius: 15px;
   
 }
-#intro {
-  background-color: #000;
+h5{
+  height: 10px;
 }
+.news{
+  margin: 0px 100px 50px 100px;
+}
+.button{
+  background-color: #002bff;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+.leval{
+  margin: 0px 100px 50px 100px;
+}
+h2{ 
+  margin: 20px 150px;
+}
+.choice {
+  margin: 20px 140px;
+}
+.abi3{
+  margin: 20px 140px;
+}
+h3{
+  font-weight: bold;
+}
+#sub{
+  margin: 100px;
+}
+#about{
+  margin: 50px 150px;
+}
+p{
+  font-size: 20px;
+}
+.line{
+  text-align: center;
+  background: #52b9ed;
+  padding: 30px;
+  border-radius: 10px;
+}
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 240px;
+
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  background-color: black;
+}
+
+
+@media (max-width: 797px){
+    .navbar .links,
+  .navbar .action_btn {
+      display: none;
+  }
+  .navbar .toggle_btn{
+      display: block;
+  }
+  .dropdown_menu {
+      display: block;
+  }
+}
+  @media (max-width: 757px){
+    #banner{
+      margin: 5px 50px;
+      padding: 100px;
+    }
+  }
 #team {
   background-color: #000;
 }
@@ -368,75 +421,49 @@ span::before
 
 /* BUTTON */
 /* RESPONSIVE DESIGN */
-@media (max-width: 686px) {
-  .navbar .links,
-  .navbar .action_btn {
-      display: none;
-  }
-  .navbar .toggle_btn{
-      display: block;
-  }
-  .dropdown_menu {
-      display: block;
-  }
-  .h4 {
-    font-size: 25px;
-  }
-  button {
-    padding: 15px 50px;
-    align-items: center;
-  }
-  #banner{
-    display: none;
-  }
-  #button
-  {
-    display: none;
 
-  }
-  #buttons
-  {
-    display: block;
-  }
-  .grade6{
-    font-size: 10px;
-  }
-}  
-@media (max-width: 500px) {
+@media (max-width: 468px) {
   .navbar .logo a {
-    font-size: 1rem;
+    font-size: rem;
     font-weight: bold;
   
   
   }
   .dropdown_menu {
+    display: block;
       left: 6rem;
       
   }
-
-  #hero h1 
-  {
-      font-size: 1.5rem;
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
   }
-  button {
-    margin: 5px;
-    width: 100px;
-    padding: 5px 10px;
-    font-size: 10px;
+  a {
+    font-weight: bold;
   }
-  #banner{
-    display: none;
+  .choice{
+    margin: 0px;
   }
-  .h4 {
-    font-size: 16px;
+  .abi3{
+    margin: 0px;
+    padding: 0px;
   }
-  .grade6{
-    font-size: 10px;
+  #sub{
+    margin: 0px;
   }
-
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
 
 }
-@media (max-width: 400px)
+@media (max-width: 00px)
 {
   button {
     margin: 5px;
