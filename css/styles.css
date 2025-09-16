@@ -171,7 +171,7 @@ section#hero{
 button {
   font-size: 20px;
   margin: 5px 0px;
-  padding: 30px 60px;
+  padding: 25px 45px;
   outline: #000;
   background-color: #021f88;
   color: #fff;
@@ -422,7 +422,7 @@ span::before
 /* BUTTON */
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 468px) {
+@media (max-width: 384px) {
   .navbar .logo a {
     font-size: rem;
     font-weight: bold;
@@ -461,6 +461,31 @@ span::before
   p{
     font-size: 15px;
   }
+  #abi{
+    margin: 20px;
+  }
+  button{
+     font-size: 15px;
+  margin: 2px 0px;
+  padding: 20px 50px;
+  }
+  #banner{
+      margin: 5px 40px;
+      padding: 50px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+  padding: 0px;
+}
 
 }
 @media (max-width: 00px)
