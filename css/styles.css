@@ -279,26 +279,6 @@ p{
 .footer{
   background-color: black;
 }
-
-
-@media (max-width: 797px){
-    .navbar .links,
-  .navbar .action_btn {
-      display: none;
-  }
-  .navbar .toggle_btn{
-      display: block;
-  }
-  .dropdown_menu {
-      display: block;
-  }
-}
-  @media (max-width: 757px){
-    #banner{
-      margin: 5px 50px;
-      padding: 100px;
-    }
-  }
 #team {
   background-color: #000;
 }
@@ -421,6 +401,45 @@ span::before
 
 /* BUTTON */
 /* RESPONSIVE DESIGN */
+@media (max-width: 797px){
+    .navbar .links,
+  .navbar .action_btn {
+      display: none;
+  }
+  .navbar .toggle_btn{
+      display: block;
+  }
+  .dropdown_menu {
+      display: block;
+  }
+  footer{
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+}
+}
+  @media (max-width: 757px){
+    #banner{
+      margin: 5px 50px;
+      padding: 100px;
+    }
+    footer{
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+}
+  }
+  @media (max-width: 482px){
+    #banner{
+      margin: 5px 40px;
+      padding: 60px;
+    }
+    footer{
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
+}
+  }
 
 @media (max-width: 384px) {
   .navbar .logo a {
@@ -449,7 +468,7 @@ span::before
     padding: 0px;
   }
   #sub{
-    margin: 0px;
+    margin: 60px;
   }
   #about{
     margin: 10px;
@@ -485,6 +504,11 @@ a{
 .abi3{
   margin: 0px;
   padding: 0px;
+}
+footer{
+  justify-content: center;
+  align-items: center;
+  padding-top: 100%;
 }
 
 }
