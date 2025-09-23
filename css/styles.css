@@ -249,6 +249,15 @@ p{
   padding: 30px;
   border-radius: 10px;
 }
+
+.media{
+  display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 28%;
+
+  overflow-x: auto;
+}
 /* DROPDOWN MENU */
 .dropdown_menu {
   display: none;
@@ -478,6 +487,13 @@ a{
 h5{
   font-size: 15px;
 }
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 68%;
+}
+
 
 }
 
@@ -540,6 +556,13 @@ a{
 h5{
   font-size: 15px;
 }
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 125%;
+}
+
 
 }
 
@@ -581,7 +604,7 @@ h5{
   button{
      font-size: 15px;
      margin: 2px ;
-     padding:10px 33px;
+     padding:10px 47px;
   }
   #banner{
       margin: 5px;
@@ -602,17 +625,15 @@ a{
 h5{
   font-size: 15px;
 }
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 125%;
+}
 
 }
-@media (max-width: 362px)
-{
-.choice{
-  margin: 0px 5px;
-}
-.abi3{
-  margin: 0px;
-}
-}
+
 @media (max-width: 402px) {
       .navbar .logo{
       font-size: 15px;
@@ -672,7 +693,21 @@ a{
 h5{
   font-size: 15px;
 }
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 125%;
+}
 
+
+}
+@media (max-width: 398px){
+  button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 41px;
+  }
 }
 @media (max-width: 371px) {
       .navbar .logo{
@@ -709,10 +744,10 @@ h5{
   #abi{
     margin: 25px 0px;
   }
-  button{
-     font-size: 12px;
-     margin: 1px ;
-     padding:9px 30px;
+  button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 37px;
   }
   #banner{
       margin: 5px;
@@ -734,6 +769,20 @@ h5{
   font-size: 15px;
 }
 
+}
+@media (max-width: 345px){
+    button {
+         font-size: 15px;
+     margin: 1px ;
+     padding:10px 34px;
+  }
+}
+@media (max-width: 325px){
+    button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 31px;
+  }
 }
 @media (max-width: 257px) {
       .navbar .logo{
