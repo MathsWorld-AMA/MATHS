@@ -426,7 +426,7 @@ span::before
     }
   }
 
-@media (max-width: 390px) {
+@media (max-width: 442px) {
       .navbar .logo{
       font-size: 15px;
     }
@@ -469,6 +469,198 @@ span::before
   #banner{
       margin: 5px;
       padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 362px)
+{
+.choice{
+  margin: 0px 5px;
+}
+.abi3{
+  margin: 0px;
+}
+}
+@media (max-width: 402px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 33px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 371px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 12px;
+     margin: 1px ;
+     padding:9px 30px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 80px 90px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 257px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 10px;
+     margin: 1px ;
+     padding:8px 28px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 70px 80px;
     }
   .news{
   margin: 0px 10px;
