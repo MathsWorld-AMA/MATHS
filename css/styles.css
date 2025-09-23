@@ -46,7 +46,6 @@ li{
 
 a{
   text-decoration: none;
-  color: #000;
   font-size: 1.5rex;
 
 }
@@ -159,6 +158,11 @@ section#hero{
   color: #fff;
 
 }
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+  color: #0b2ca1;
+}
 .intro{
   margin: 50px;
   background-image: url(../image/360_F_430029841_hCPkljypGWekhCBw6tv54t9U9Rl8eC9C.jpg);
@@ -167,24 +171,24 @@ section#hero{
   background-position: center;
 
 }
+grade{
+  margin: 10px 80px;
+  font-size: 15px;
+}
+.row {
+  margin: 1
+}
 
 button {
-  font-size: 20px;
-  margin: 5px 0px;
-  padding: 25px 45px;
-  outline: #000;
-  background-color: #021f88;
-  color: #fff;
-  cursor: pointer;
-  transition: scale 0.2 ease;
-  position: relative;
-  z-index: 0;
-
-  border-radius: 12px;
+  margin: 5px;
+  padding: 10px 85px;
+  background-color: #0a1fa3;
+  color: #ffffff;
+  border-radius: 10px;
   
 }
 #abi {
-  margin: 50px;
+  margin: 50px 100px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,8 +197,8 @@ button {
   
 }
 #banner {
-  margin: 10px 100px 10px 100px;
-  padding: 150px;
+  margin: 30px 100px 30px 100px;
+  padding: 120px;
   background-color: #fff;
   background-image: url(../image/bat.jpg);
   align-items: center;
@@ -210,7 +214,7 @@ h5{
   margin: 0px 100px 50px 100px;
 }
 .button{
-  background-color: #002bff;
+  background-color: #080d27;
   padding: 15px;
   border-radius: 10px;
   color: #fff;
@@ -402,57 +406,31 @@ span::before
 /* BUTTON */
 /* RESPONSIVE DESIGN */
 @media (max-width: 797px){
-    .navbar .links,
-  .navbar .action_btn {
-      display: none;
+    .navbar .links a{
+      font-size: 15px;
+      justify-content: center;
+      align-items: center;
+      padding-left: 50px;
+    }
   }
-  .navbar .toggle_btn{
-      display: block;
-  }
-  .dropdown_menu {
-      display: block;
-  }
-  footer{
-  justify-content: center;
-  align-items: center;
-  padding-top: 100%;
-}
-}
   @media (max-width: 757px){
     #banner{
       margin: 5px 50px;
       padding: 100px;
     }
-    footer{
-  justify-content: center;
-  align-items: center;
-  padding-top: 100%;
-}
   }
   @media (max-width: 482px){
     #banner{
       margin: 5px 40px;
       padding: 60px;
     }
-    footer{
-  justify-content: center;
-  align-items: center;
-  padding-top: 100%;
-}
   }
 
 @media (max-width: 384px) {
-  .navbar .logo a {
-    font-size: rem;
-    font-weight: bold;
-  
-  
-  }
-  .dropdown_menu {
-    display: block;
-      left: 6rem;
-      
-  }
+      .navbar .logo{
+      font-size: 15px;
+    }
+
   h2 {
     margin: 10px 25px;
     font-weight: bold;
@@ -481,16 +459,16 @@ span::before
     font-size: 15px;
   }
   #abi{
-    margin: 20px;
+    margin: 25px 0px;
   }
   button{
      font-size: 15px;
-  margin: 2px 0px;
-  padding: 20px 50px;
+     margin: 2px ;
+     padding:10px 33px;
   }
   #banner{
-      margin: 5px 40px;
-      padding: 50px;
+      margin: 5px;
+      padding: 90px 100px;
     }
   .news{
   margin: 0px 10px;
@@ -503,41 +481,19 @@ a{
 }
 .abi3{
   margin: 0px;
-  padding: 0px;
 }
-footer{
-  justify-content: center;
-  align-items: center;
-  padding-top: 100%;
-}
-
-}
-@media (max-width: 00px)
-{
-  button {
-    margin: 5px;
-    width: 100px;
-    padding: 5px 10px;
-    font-size: 10px;
-}
-.h4 {
+h5{
   font-size: 15px;
 }
-#abi {
-
-  padding: 90px;
-}
-#button
-{
-  display: none;
 
 }
-#buttons
+@media (max-width: 362px)
 {
-  display: block;
+.choice{
+  margin: 0px 5px;
 }
-.grade6{
-  font-size: 10px;
+.abi3{
+  margin: 0px;
 }
 }
 
