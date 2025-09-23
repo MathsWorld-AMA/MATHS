@@ -614,7 +614,7 @@ h5{
   margin: 0px 10px;
 }  
 .leval{
-  margin: 0px 10px;
+  margin: 30px 10px;
 }
 a{
   font-size: 10px;
@@ -629,8 +629,7 @@ h5{
     display: grid;
   gap: var(--size-3);
   grid-auto-flow: column;
-  grid-auto-columns: 125%;
-}
+  grid-auto-columns: 90%;
 
 }
 
@@ -672,7 +671,7 @@ h5{
   button{
      font-size: 15px;
      margin: 2px ;
-     padding:10px 33px;
+     padding:10px 30px;
   }
   #banner{
       margin: 5px;
@@ -682,7 +681,7 @@ h5{
   margin: 0px 10px;
 }  
 .leval{
-  margin: 0px 10px;
+  margin: 30px 10px;
 }
 a{
   font-size: 10px;
@@ -697,7 +696,7 @@ h5{
     display: grid;
   gap: var(--size-3);
   grid-auto-flow: column;
-  grid-auto-columns: 125%;
+  grid-auto-columns: 98%;
 }
 
 
