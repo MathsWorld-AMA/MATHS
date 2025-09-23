@@ -426,7 +426,7 @@ span::before
     }
   }
 
-@media (max-width: 384px) {
+@media (max-width: 390px) {
       .navbar .logo{
       font-size: 15px;
     }
