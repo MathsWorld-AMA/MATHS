@@ -632,6 +632,13 @@ h5{
   grid-auto-columns: 90%;
 
 }
+@media (max-width: 439px){
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 42px;
+  }
+}
 
 @media (max-width: 402px) {
       .navbar .logo{
@@ -671,7 +678,7 @@ h5{
   button{
      font-size: 15px;
      margin: 2px ;
-     padding:10px 30px;
+     padding:10px 37px;
   }
   #banner{
       margin: 5px;
@@ -705,7 +712,7 @@ h5{
   button {
          font-size: 15px;
      margin: 2px ;
-     padding:10px 41px;
+     padding:10px 33px;
   }
 }
 @media (max-width: 371px) {
@@ -746,7 +753,7 @@ h5{
   button {
          font-size: 15px;
      margin: 2px ;
-     padding:10px 37px;
+     padding:10px 31px;
   }
   #banner{
       margin: 5px;
@@ -780,7 +787,7 @@ h5{
     button {
          font-size: 15px;
      margin: 2px ;
-     padding:10px 31px;
+     padding:10px 29px;
   }
 }
 @media (max-width: 257px) {
