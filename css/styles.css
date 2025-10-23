@@ -1,0 +1,872 @@
+
+*{
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+      }
+}
+
+.h4{
+  color: #000;
+  font-size: 40px;
+  
+}
+.subject{
+ 
+  width: 200px;
+  padding: 25px;
+}
+.footer{
+  background-color: black;
+}
+.border
+{
+  padding: 25px;
+  font-size: 20px
+}
+.grade6
+{
+  padding: 10px;
+  font-size: 25px;
+  background-color: rgb(13, 100, 100);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'open sans' , sans-serif;
+}
+
+li{
+  
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.5rex;
+
+}
+
+a:hover {
+  color: rgb(237, 161, 21);
+
+}
+/* HEADER*/
+header {
+  background-color: #fff;
+  position: relative;
+  padding: 0 2rem;
+
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+
+}
+.navbar .links a{
+  font-size: 1.25rem;
+}
+.navbar .toggle_btn {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+
+}
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+
+}
+.action_btn:active {
+  scale: 0.95;
+
+}
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 240px;
+
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* HERO */
+section#hero{
+  height: calc(100vh - 60px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+
+}
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+  color: #0b2ca1;
+}
+.intro{
+  margin: 50px;
+  background-image: url(../image/360_F_430029841_hCPkljypGWekhCBw6tv54t9U9Rl8eC9C.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+grade{
+  margin: 10px 80px;
+  font-size: 15px;
+}
+.row {
+  margin: 1
+}
+
+button {
+  margin: 5px;
+  padding: 10px 85px;
+  background-color: #0a1fa3;
+  color: #ffffff;
+  border-radius: 10px;
+  
+}
+#abi {
+  margin: 50px 100px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  
+}
+#banner {
+  margin: 30px 100px 30px 100px;
+  padding: 120px;
+  background-color: #fff;
+  background-image: url(../image/bat.jpg);
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  
+}
+h5{
+  height: 10px;
+}
+.news{
+  margin: 0px 100px 50px 100px;
+}
+.button{
+  background-color: #080d27;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+.leval{
+  margin: 0px 100px 50px 100px;
+}
+h2{ 
+  margin: 20px 150px;
+}
+.choice {
+  margin: 20px 140px;
+}
+.abi3{
+  margin: 20px 140px;
+}
+h3{
+  font-weight: bold;
+}
+#sub{
+  margin: 100px;
+}
+#about{
+  margin: 50px 150px;
+}
+p{
+  font-size: 20px;
+}
+.line{
+  text-align: center;
+  background: #52b9ed;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.media{
+  display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 28%;
+
+  overflow-x: auto;
+}
+.ourteam{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.card{
+ border-radius: 20px;
+ margin: 10px;
+}
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open {
+  height: 240px;
+
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  background-color: black;
+}
+#team {
+  background-color: #000;
+}
+
+svg {
+  color: #002bff;
+}
+#buttons
+{
+  display: none;
+}
+#subject
+{
+  padding: 150px;
+  background-color: #000;
+  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pdf
+{
+  background-color: #000;
+  padding: 20px 0px 50px 0px;
+  background-image: url(../image/painting-mountain-lake-with-mountain-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#pdf a p{
+  font-size: 15px;
+}
+
+.ring{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 150px;
+height: 150px;
+background: transparent;
+border: 3px solid #3c3c3c;
+border-radius: 50%;
+text-align: center;
+line-height: 150px;
+font-family: sans-serif;
+font-size: 20px;
+color: #fff000;
+letter-spacing: 4px;
+text-transform: uppercase;
+text-shadow: 0 0 10px #fff000;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+.ring::before
+{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #fff000;
+  border-right: 3px solid #fff000;
+  border-radius: 50%;
+  animation: animatecircle 2s linear infinite;
+
+}
+span
+{
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+
+}
+span::before
+{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff000;
+  top: -6px;
+  right: -8px;
+  box-shadow: 0 0 20px #fff000;
+
+}
+@keyframes animatecircle
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform: rotate(45deg);
+  }
+  100%
+  {
+    transform: rotate(405deg);
+    
+  }
+}
+
+/* BUTTON */
+/* RESPONSIVE DESIGN */
+@media (max-width: 797px){
+    .navbar .links a{
+      font-size: 15px;
+      justify-content: center;
+      align-items: center;
+      padding-left: 50px;
+    }
+  }
+  @media (max-width: 757px){
+    #banner{
+      margin: 5px 50px;
+      padding: 100px;
+    }
+  }
+  @media (max-width: 572px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 33px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 68%;
+}
+
+
+}
+
+@media (max-width: 456px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 33px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 30px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 85%;
+}
+
+
+}
+
+@media (max-width: 442px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 47px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 30px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 90%;
+
+}
+@media (max-width: 439px){
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 42px;
+  }
+}
+
+@media (max-width: 402px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 15px;
+     margin: 2px ;
+     padding:10px 37px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 90px 100px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 30px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+.media{
+    display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 98%;
+}
+
+
+}
+@media (max-width: 398px){
+  button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 33px;
+  }
+}
+@media (max-width: 371px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 31px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 80px 90px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 345px){
+    button {
+         font-size: 15px;
+     margin: 1px ;
+     padding:10px 34px;
+  }
+}
+@media (max-width: 325px){
+    button {
+         font-size: 15px;
+     margin: 2px ;
+     padding:10px 29px;
+  }
+}
+@media (max-width: 257px) {
+      .navbar .logo{
+      font-size: 15px;
+    }
+
+  h2 {
+    margin: 10px 25px;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+  .choice{
+    margin: 0px;
+  }
+  .abi3{
+    margin: 0px;
+    padding: 0px;
+  }
+  #sub{
+    margin: 60px;
+  }
+  #about{
+    margin: 10px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  #abi{
+    margin: 25px 0px;
+  }
+  button{
+     font-size: 10px;
+     margin: 1px ;
+     padding:8px 28px;
+  }
+  #banner{
+      margin: 5px;
+      padding: 70px 80px;
+    }
+  .news{
+  margin: 0px 10px;
+}  
+.leval{
+  margin: 0px 10px;
+}
+a{
+  font-size: 10px;
+}
+.abi3{
+  margin: 0px;
+}
+h5{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 362px)
+{
+.choice{
+  margin: 0px 5px;
+}
+.abi3{
+  margin: 0px;
+}
+}
+}
