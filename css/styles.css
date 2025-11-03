@@ -52,7 +52,8 @@ section#banner {
 }
 
 .btn:hover {
-  background-color: #0388c1;
+  background-color: #87c7ff;
+  color: #000;
 }
 
 /* ===== Brand Info ===== */
@@ -80,8 +81,8 @@ section#banner {
 }
 .h1 h1{
   text-align: center;
-  font-weight: bold;
   font-size: 45px;
+  font-weight: bold;
   padding: 0px 0px 50px 0px;
 }
 
@@ -284,9 +285,29 @@ button {
   
 }
 button:hover{
-   background-color: #0e6fca;
+   background-color: #1a5790;
    transition: 0.5s;
    cursor: pointer;
+}
+.grade{
+  color: #000000;
+}
+.grade:hover{
+  color: #dbf0fc;
+}
+.leval{
+  margin: 0px 100px 50px 100px;
+}
+.leval .h3{
+  margin: 20px 0px 5px;
+  background-color: #1a5790;
+  color: #fff;
+  padding: 7px;
+  border-radius: 7px;
+  font-size: 25px;
+  font-weight: bold;
+  display: inline-block;
+  
 }
 #abi {
   margin: 50px 100px;
@@ -315,9 +336,7 @@ h5{
 .news p {
   text-align: center;
 }
-.leval{
-  margin: 0px 100px 50px 100px;
-}
+
 h2{ 
   margin: 20px 150px;
 }
@@ -1008,7 +1027,7 @@ section#banner{
   font-size: 15px;
 }
 .btn{
-  margin: 10px 100px 10px ;
+  margin: 10px 130px 10px ;
 }
 .news h1{
     text-align: center;
@@ -1139,7 +1158,7 @@ section#banner{
   font-size: 15px;
 }
 .btn{
-  margin: 10px 100px 10px ;
+  margin: 10px 115px 10px ;
 }
 .news h1{
     text-align: center;
