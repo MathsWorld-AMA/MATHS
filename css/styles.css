@@ -1059,6 +1059,9 @@ section#banner{
   font-size: 25px;
   padding: 0px;
 }
+.card {
+  margin: 20px 70px 10px;
+}
 }
 @media (max-width: 423px){
   .footernav{
@@ -1094,6 +1097,9 @@ section#banner{
     text-align: center;
   font-size: 25px;
   padding: 0px;
+}
+.card {
+  margin: 20px 50px 10px;
 }
 }
 
@@ -1189,6 +1195,9 @@ section#banner{
   font-size: 25px;
   padding: 0px;
 }
+.card {
+  margin: 20px 50px 10px;
+}
 
 
 }
@@ -1226,6 +1235,9 @@ section#banner{
   font-size: 25px;
   padding: 0px;
 }
+.card {
+  margin: 20px 50px 10px;
+}
 }
 @media(max-width: 387px){
   .footernav ul li a{
@@ -1258,6 +1270,9 @@ section#banner{
     text-align: center;
   font-size: 25px;
   padding: 0px;
+}
+.card {
+  margin: 20px 40px 10px;
 }
 }
 @media (max-width: 371px) {
@@ -1346,9 +1361,12 @@ section#banner{
   font-size: 25px;
   padding: 0px;
 }
+.card {
+  margin: 20px 35px 10px;
+}
 
 }
-@media (max-width: 345px){
+@media (max-width: 350px){
     button {
          font-size: 15px;
      margin: 1px ;
@@ -1357,6 +1375,9 @@ section#banner{
   .footernav ul li a{
   font-size: 10px;
 }
+.card {
+  margin: 20px 20px 10px;
+}
 }
 @media (max-width: 325px){
     button {
@@ -1364,6 +1385,9 @@ section#banner{
      margin: 2px ;
      padding:10px 29px;
   }
+  .card {
+  margin: 20px 10px 10px;
+}
 }
 @media (max-width: 257px) {
       .navbar .logo{
