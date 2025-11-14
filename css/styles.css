@@ -234,6 +234,7 @@ button:hover{
   
 }
 #abi {
+  margin: 10px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1034,7 +1035,7 @@ h5{
   font-size: 25px;
   padding: 0px;
 }
-.card {
+.cards {
   margin: 20px 50px 10px;
 }
 
