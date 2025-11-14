@@ -7,6 +7,7 @@
         
       }
 }
+/**navbar**/ 
 .navbar{
     margin: 10px;
     background-color: rgb(227, 234, 241);
@@ -39,22 +40,6 @@
 .nav-link:hover, .nav-link.active{
     color: #000;
 }
-@media (min-width: 991px){
-.nav-link::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: #000399;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
-
-
-}
-}
 .nav-link:hover::before, .nav-link.active::before{
     width: 100%;
     visibility: visible;
@@ -76,8 +61,9 @@
 .nav-links:hover{
   background: #3075ff;
 }
-
+/**banner**/
 section#banner {
+  margin: 10px 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -86,8 +72,6 @@ section#banner {
   background-color: #f4f7fc;
   border-radius: 20px;
 }
-
-/* ===== Text Section ===== */
 .banner-text {
   flex: 1 1 45%;
   padding: 20px;
@@ -137,7 +121,6 @@ section#banner {
   font-size: 20px;
 }
 
-/* ===== Image Grid ===== */
 .banner-images {
   flex: 1 1 45%;
   display: grid;
@@ -155,36 +138,6 @@ section#banner {
   font-weight: bold;
   padding: 0px 0px 50px 0px;
 }
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) 
-{
-      section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 20px;
-}
-.btn{
-  margin: 10px 220px 10px ;
-}
-}
-
-
 
 .h4{
   color: #000;
@@ -281,7 +234,6 @@ button:hover{
   
 }
 #abi {
-  margin: 50px 100px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,7 +245,7 @@ h5{
   height: 10px;
 }
 .news{
-  margin: 50px 100px;
+  margin: 20px 100px;
   padding: 40px;
   background-color: #dbf0fc;
   border-radius: 20px;
@@ -609,70 +561,128 @@ body {
 .join-btn:hover {
   background-color: #1ebe5c;
 }
+/* Initial state: invisible and slightly moved down */
+.card-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+/* When the element is visible */
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.media > div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* Responsive Section */
+.responsive-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.responsive-section .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.responsive-section .section-header h2 {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.responsive-section .section-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.responsive-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.responsive-section .col {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card img {
+  max-width: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
 
 /* BUTTON */
 /* RESPONSIVE DESIGN */
-@media (max-width: 797px){
+@media (min-width: 991px){
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #000399;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+
+}
+}
+  @media (max-width: 797px){
     .navbar .links a{
       font-size: 15px;
       justify-content: center;
       align-items: center;
       padding-left: 50px;
     }
-    section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: non;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 20px;
-}
-.btn{
-  margin: 10px 220px 10px ;
-}
-  section#banner {
-    flex-direction: column;
+
   }
-  .banner-images {
-    grid-template-columns: repeat(2, 1fr);
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .grade-btn {
+    padding: 15px 5px;
   }
+
+  .grade-btn h3 {
+    font-size: 1.2rem;
   }
+}
   @media (max-width: 592px){
-     section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 215px 10px ;
-}
 .h1 h1{
   font-size: 40px;
 }
@@ -682,8 +692,9 @@ body {
   padding: 0px;
 }
   }
-  @media (max-width: 572px) {
-      .navbar .logo{
+
+  @media (max-width: 578px) {
+  .navbar .logo{
       font-size: 15px;
     }
 
@@ -743,29 +754,6 @@ h5{
   grid-auto-flow: column;
   grid-auto-columns: 68%;
 }
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 155px 10px ;
-}
 .h1 h1{
   font-size: 40px;
 }
@@ -774,15 +762,12 @@ section#banner{
   font-size: 25px;
   padding: 0px;
 }
-
-
 }
 
 @media (max-width: 456px) {
       .navbar .logo{
-      font-size: 15px;
+      font-size: 10px;
     }
-
   h2 {
     margin: 10px 25px;
     font-weight: bold;
@@ -842,29 +827,6 @@ h5{
 .footernav ul li a{
   font-size: 15px;
 }
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 145px 10px ;
-}
 .h1 h1{
   font-size: 40px;
 }
@@ -881,12 +843,6 @@ section#banner{
       .navbar .logo{
       font-size: 15px;
     }
-  section#banner {
-    flex-direction: column;
-  }
-  .banner-images {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
   h2 {
     margin: 10px 25px;
@@ -948,29 +904,6 @@ h5{
 .footernav{
   margin: 10px 0;
 }
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 100px 10px ;
-}
 .news h1{
     text-align: center;
   font-size: 25px;
@@ -989,29 +922,6 @@ section#banner{
 }
 .footernav ul li a{
   font-size: 14px;
-}
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 135px 10px ;
 }
 .h1 h1{
   font-size: 40px;
@@ -1032,29 +942,6 @@ section#banner{
 .footernav ul li a{
   font-size: 13px;
 }
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 130px 10px ;
-}
 .news h1{
     text-align: center;
   font-size: 25px;
@@ -1069,6 +956,19 @@ section#banner{
       .navbar .logo{
       font-size: 15px;
     }
+  section#banner{
+    margin: 25px 0px;
+    padding: 0px;
+  }
+  .banner-text h1{
+    font-size: 30px;
+  }
+  .banner-text p{
+    font-size: 15px;
+  }
+  .banner-images img{
+    padding: 10px;
+  }
 
   h2 {
     margin: 10px 25px;
@@ -1129,29 +1029,6 @@ h5{
 .footernav ul li a{
   font-size: 12px;
 }
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 100px 10px ;
-}
 .news h1{
     text-align: center;
   font-size: 25px;
@@ -1169,29 +1046,6 @@ section#banner{
      margin: 2px ;
      padding:10px 33px;
   }
-  section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 115px 10px ;
-}
 .news h1{
     text-align: center;
   font-size: 25px;
@@ -1204,29 +1058,6 @@ section#banner{
 @media(max-width: 387px){
   .footernav ul li a{
   font-size: 11px;
-}
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 100px 10px ;
 }
 .news h1{
     text-align: center;
@@ -1294,29 +1125,6 @@ h5{
 }
 .footernav ul li a{
   font-size: 10px;
-}
-section#banner{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-text{
-  margin: 0px;
-  padding: 0px;
-}
-.banner-images{
-  display: none;
-}
-.banner-text h1{
-  text-align: center;
-  font-size: 40px;
-  padding: 0px;
-}
-.banner-text p{
-  text-align: center;
-  font-size: 15px;
-}
-.btn{
-  margin: 10px 100px 10px ;
 }
 .news h1{
     text-align: center;

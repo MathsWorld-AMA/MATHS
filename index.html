@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ta">
 <head>
@@ -18,6 +17,9 @@
     <link rel="stylesheet" href="./sinhala.html">
     <link rel="stylesheet" href="./tamil.html">
     <link rel="stylesheet" href="./css/java.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
       <style>
 
     /* Popup overlay background */
@@ -97,12 +99,142 @@
     .join-btn:hover {
       background-color: #1ebe5c;
     }
+    /* ===== Grade Buttons Styling ===== */
+#abi .btn-outline-primary, #abi .btn-primary {
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden; /* for ripple effect */
+}
+
+/* Hover effect: scale + glow */
+#abi .btn-outline-primary:hover, #abi .btn-primary:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7),
+              0 0 30px rgba(0, 123, 255, 0.5);
+}
+
+/* Grade content inside button */
+.grade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fade-up animation on scroll (AOS) */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+}
+
+/* Optional: bounce for first button */
+#abi .col-lg-2:first-child .btn-outline-primary {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Ripple effect on click */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 123, 255, 0.5);
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+/* NEWS SECTION ANIMATION */
+#news {
+  background: #f8f9fa;
+  text-align: center;
+  overflow: hidden;
+}
+
+#news h1, #news p {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+#news.visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+#news.visible p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+.grade-link {
+  text-decoration: none;
+}
+
+.grade-btn {
+  background-color: #f8f9fa; /* light background */
+  border: 2px solid #0d6efd; /* Bootstrap primary color */
+  border-radius: 12px;
+  padding: 20px 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.grade-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #0d6efd;
+  color: white;
+}
+
+.grade-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.grade-btn h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .grade-btn {
+    padding: 12px 5px;
+  }
+
+  .grade-btn h3 {
+    font-size: 1rem;
+  }
+}
+
+
   </style>
   
     
 </head>
 <body>
   <section>
+<!-- ⭐ NAVBAR SECTION WITH ANIMATION -->
         <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">MATHS WORLD</a>
@@ -140,8 +272,10 @@
     </div>
   </div>
 </nav>
-  </section>
+</section>
 
+
+<!-- ⭐ BANNER WITH ANIMATION -->
 <section id="banner">
     <div class="banner-text">
       <h1>MATHSWORLD</h1>
@@ -157,145 +291,121 @@
       <img src="./image/bat.jpg" alt="Student 1">
     </div>
 </section>
+
+
 <section>
-    <div id="abi">
-      <div class="container-fluid">
-        <div class="h1">
-           <h1>உங்கள் பாடசாலை தரத்தை தேர்வு செய்யவும்</h1>
+  <div id="abi" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h1>உங்கள் பாடசாலை தரத்தை தேர்வு செய்யவும்</h1>
+      </div>
+      
+      <div class="row justify-content-center g-3">
+        <!-- Example for grades 1-12 + A/L -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="100">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
+              <h3>01</h3>
+            </div>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="#">
-              <button type="button" class="btn-outline-primary">
-                <div class="grade">
-                  <div>தரம்</div>
-                  <h3>01</h3>
-                </div>
-              </button>
 
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="#">
-              <button type="button" class="btn-primary">
-                <div class="grade">
-                  <div>தரம்</div>
-                  <h3>02</h3>
-                </div>
-              </button>
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="#"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
+              <h3>02</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>03</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="#"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>04</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="#"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>05</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>   
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்6.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>06</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்7.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>07</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்8.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>08</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்9.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>09</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்10.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>10</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்11.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>11</h3>
-          </div>
-            </button>
-
-            </a>
-          </div>   
-          <div class="col-lg-2 col-md-4 col-4 col-sm-12 text-center">
-            <a href="./தரம்12.html"><button type="button" class="btn-outline-primary">
-                            <div class="grade">
-                              <div>தரம்</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="grade-link">
+            <div class="grade-btn">
+              <div class="grade-label">தரம்</div>
               <h3>A/L</h3>
-          </div>
-            </button>
+            </div>
+          </a>
+        </div>
 
-            </a>
-          </div>
-        </div>
-        </div>
-        
-        </div>   
-  
-        
+        <!-- Repeat for 3–12 + A/L with incremental data-aos-delay -->
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   <section id="news">
     <div class="news">
       <h1>சிறந்த பெறுபேறுகளுக்கு MATHS WORLD</h1>
@@ -611,7 +721,74 @@ MATHS WORLD — கற்றல் ஒரு கடமையல்ல, ஒரு
         : 'fa-solid fa-bars'
   
     }
-  </script>   
+  </script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 80,
+    once: true
+  });
+</script>
+<script>
+document.querySelectorAll('#abi .btn-outline-primary, #abi .btn-primary').forEach(button => {
+  button.addEventListener('click', function(e) {
+    const ripple = document.createElement('span');
+    ripple.classList.add('ripple');
+    const rect = button.getBoundingClientRect();
+    ripple.style.left = `${e.clientX - rect.left}px`;
+    ripple.style.top = `${e.clientY - rect.top}px`;
+    button.appendChild(ripple);
+
+    setTimeout(() => {
+      ripple.remove();
+    }, 600);
+  });
+});
+</script>
+<!-- Add AOS CSS and JS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 100,
+    once: true
+  });
+</script>
+<script>
+window.addEventListener('scroll', function() {
+  const newsSection = document.getElementById('news');
+  const sectionPos = newsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.2;
+
+  if (sectionPos < screenPos) {
+    newsSection.classList.add('visible');
+  }
+});
+</script>
+<script>
+  const cards = document.querySelectorAll('.media > div');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  cards.forEach(card => {
+    card.classList.add('card-animate');
+    observer.observe(card);
+  });
+</script>
+
+
+  
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
