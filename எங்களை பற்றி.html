@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathsworld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./pdf/GR-11 UNITE 1.pdf">
+
+</head>
+<body>
+  <nav>
+    <header>
+      <div class="navbar">
+          <div class="logo"><a href="#">MATHS WORLD</a></div>
+          <ul class="links">
+              <li><a href="./index.html">முகப்பு</a></li>
+              <li><a href="./எங்களை பற்றி.html">எங்களை பற்றி</a></li>
+              <li><a href="./தொடர்பு.html">தொடர்பு</a></li>
+          </ul>
+          
+          <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+  
+          </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="./index.html">முகப்பு</a></li>
+        <li><a href="./எங்களை பற்றி.html">எங்களை பற்றி</a></li>
+        <li><a href="./தாக்கம்.html">தாக்கம்</a></li>
+        <li><a href="./தொடர்பு.html">தொடர்பு</a></li>>
+       
+      </div>
+  </header>
+
+  </nav>
+  <section id="about">
+    <div class="line">
+          <h1>எங்கள்‌ குறிக்கோள்‌</h1>
+    <p>எண்ணிம உலகத்தில்‌ மாணவர்களிற்கென சிறந்ததொரு கற்றல்‌ கட்டமைப்பை உருவாக்குதல்‌.</p>
+    </div><br>
+    <p class="pt-2">அனைத்தும்‌ டிஜிட்டல்‌ மயப்படுத்தப்பட்ட இந்த காலத்தில்‌ பல்வேறு துறைகளும்‌ கால ஓட்டத்துடன்‌ இணைந்து டிஜிட்டல்‌ தளத்தில்‌ பல்கிப்பெருகி வருகின்றன. அந்த வகையில்‌ கல்வித்துறையும்‌ இதற்கு விதிவிலக்கல்ல. இணையவழி கல்வியின்‌ மூலம்‌ கலவித்துறை புதியதொரு பரிமாணத்தை எட்டியுள்ளது. குறிப்பாக கொரோனா பேரிடர்‌ காலத்தில்‌ நாடே முடக்கப்பட்டிருந்தது. இதனால்‌ மாணவர்களிற்கும்‌ பாடசாலை, கல்வி நிறுவனங்களிற்கு இடையிலான தொடர்பு துண்டிக்கப்பட்டது. அந்த இக்கட்டான சூழ்நிலையில்‌ இணையவழி வகுப்புகள்‌ மாணவர்களிற்கு வரப்பிரசாதமாக அமைந்தது என்பதே உண்மை.</p>
+    <br>
+    <p>இன்று தொழில்நுட்பம்‌ மாணவர்களை தவறான பாதைக்கு இட்டு செல்வதாக ஓர்‌ எண்ண ஓட்டம்‌ மக்கள்‌ மத்தியில்‌ உள்ளது. தொழில்நுட்பம்‌ என்பது ஒரு கருவி மட்டுமே அதை எவ்வாறு பயன்படுத்துகிறோம்‌ என்பதில்‌ அதன்‌ ஆக்க மற்றும்‌ அழிவு விளைவுகள்‌ தீர்மானிக்கப்படுகிறது. உளியை கொண்டு சிலையை செதுக்க நினைத்தால்‌ அவன்‌ நிச்சயம்‌ சிற்பி ஆகலாம்‌. இங்கு பிரச்சினையாக காணப்படுவது மாணவர்களை வழிப்படுத்த தொழில்நுட்ப உலகில்‌ ஓர்‌ முறையான கட்டமைப்பு இல்லாமையே. அதை உருவாக்குவதே எங்கள்‌ நோக்கம்‌. அதை நோக்கியே எங்கள்‌ பயணம்‌ அமையும்‌.</p>
+  </section>
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center mb-0">Copyright: 2025. designed and developed by AMA Blood</p>
+            </div>
+        </div>
+    </div>
+  </footer> 
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+  
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+  
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+  
+    }
+  </script>   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</html>
