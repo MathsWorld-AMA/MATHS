@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathsWorld - Google Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles3.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">MATHS WORLD</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./impact.html">Impact</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./impact.html">Impact</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+         
+        </div>
+    </header>
+    <main>
+
+        <section id="hero">
+            <h1>MATHSWORLD</h1>
+            <div class="container">
+                <li >
+                    <a href="./tamil.html"><button type="button" class=" btn-outline-primary ps-3">Tamil</button></a>
+                    <a href="./english.html"><button type="button" class=" btn-outline-primary ps-3">English</button></a>
+                    <a href="./sinhala.html"><button type="button" class=" btn-outline-primary ps-3">sinhala</button></a>
+
+                </li>
+
+
+            </div>
+
+                
+         </section>
+         
+
+
+    </main>
+    
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+        }
+    </script>
+    
+</body>
+</html>
