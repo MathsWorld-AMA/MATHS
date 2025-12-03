@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Ad Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f6fa;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    /* Popup overlay background */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s ease;
+      z-index: 9999;
+    }
+
+    /* When popup is active */
+    .popup.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Popup content box */
+    .popup-content {
+      background: #fff;
+      border-radius: 12px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+      padding: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Close button */
+    .popup-content .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 26px;
+      cursor: pointer;
+      color: #444;
+      transition: color 0.3s;
+    }
+    .popup-content .close-btn:hover {
+      color: #e63946;
+    }
+
+    /* Image styling */
+    .popup-content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* WhatsApp button */
+    .join-btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .join-btn:hover {
+      background-color: #1ebe5c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Science Eagle</h1>
+  <p>Explore past papers and resources for your studies.</p>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <img src="https://www.scienceeagle.com/path-to-your-image.jpg" alt="Join WhatsApp Group">
+      <a href="https://chat.whatsapp.com/HAnNboEL9Je3gYL1zpIjyU" target="_blank" class="join-btn">
+        CLICK HERE to Join Our WhatsApp Group
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Wait for page load, then show popup after 2 seconds
+    window.addEventListener('load', function() {
+      setTimeout(() => {
+        document.getElementById('popup').classList.add('active');
+      }, 2000);
+    });
+
+    // Close popup when user clicks close button
+    document.getElementById('closeBtn').addEventListener('click', function() {
+      document.getElementById('popup').classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
